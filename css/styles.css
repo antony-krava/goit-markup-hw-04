@@ -129,6 +129,15 @@ body {
 /* ========== HERO ========== */
 .hero-section {
   background-color: var(--footer-bg-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
 }
 
 .hero-section .conteiner {
@@ -182,6 +191,32 @@ body {
 
 .main-advantages-list:not(:last-child) {
   margin-right: 30px;
+}
+
+.main-advantages-list::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--filter-button-bg-color);
+}
+
+.icon-antenna::before {
+  background-image: url(../images/advantages/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/advantages/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/advantages/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/advantages/astronaut.svg);
 }
 
 .advantages-list-title {
@@ -285,6 +320,14 @@ body {
   letter-spacing: 0.03em;
 }
 /* ========== END TEAM ========== */
+
+/* ========== CUSTOMERS ========== */
+.customers-section .conteiner {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* ========== END CUSTOMERS ========== */
 
 /* ========== FOOTER ========== */
 .footer {
