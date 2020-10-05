@@ -28,7 +28,7 @@ body {
   background-color: var(--main-white-color);
   color: var(--main-text-color);
 
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -74,7 +74,7 @@ body {
 
   margin-right: 93px;
 
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
@@ -376,6 +376,12 @@ body {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.main-portfolio-list:hover,
+.main-portfolio-list:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .main-portfolio-list:nth-child(3n) {
