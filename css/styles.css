@@ -336,6 +336,14 @@ body {
   padding: 0 32px;
 }
 
+/* .social-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+} */
+
 .social-link {
   display: flex;
   justify-content: center;
@@ -359,13 +367,51 @@ body {
 .social-link:focus > .social-icon {
   fill: var(--main-white-color);
 }
-
 /* ========== END TEAM ========== */
 
 /* ========== CUSTOMERS ========== */
 .customers-section .conteiner {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .main-customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--social-list-team-color);
+  border-radius: 4px;
+} */
+
+.customers-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--social-list-team-color);
+  border-radius: 4px;
+}
+
+.customer-icon {
+  fill: var(--social-list-team-color);
+}
+
+.customers-list-item:hover,
+.customers-list-item:focus {
+  border-color: var(--accent-color);
+}
+
+.customers-list-item:hover .customer-icon,
+.customers-list-item:focus .customer-icon {
+  fill: var(--accent-color);
 }
 
 /* ========== END CUSTOMERS ========== */
