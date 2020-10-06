@@ -9,6 +9,7 @@
   --footer-bg-color: #2f303a;
   --header-border-color: #ececec;
   --portfolio-conteiner-border-color: #eeeeee;
+  --social-list-team-color: #afb1b8;
 }
 
 *,
@@ -111,7 +112,24 @@ body {
 }
 
 .address-list-item {
+  display: flex;
+  align-items: center;
   color: var(--description-text-color);
+}
+
+.address-icons {
+  margin-right: 10px;
+  fill: var(--description-text-color);
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
 }
 
 .nav-list-item:hover,
@@ -119,6 +137,11 @@ body {
 .address-list-item:hover,
 .address-list-item:focus {
   color: var(--accent-color);
+}
+
+.address-list-item:hover .address-icons,
+.address-list-item:focus .address-icons {
+  fill: var(--accent-color);
 }
 
 .active {
@@ -183,6 +206,18 @@ body {
 
 .advantages-list {
   display: flex;
+}
+
+.advantages-icon-list {
+  height: 120px;
+  background-color: var(--filter-button-bg-color);
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
+.advantages-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .main-advantages-list {
@@ -287,12 +322,44 @@ body {
 
 .team-list-position {
   color: var(--description-text-color);
+  margin-bottom: 16px;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.188;
   letter-spacing: 0.03em;
 }
+
+.social-links-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-list-team-color);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.social-link:hover > .social-icon,
+.social-link:focus > .social-icon {
+  fill: var(--main-white-color);
+}
+
 /* ========== END TEAM ========== */
 
 /* ========== CUSTOMERS ========== */
