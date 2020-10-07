@@ -496,8 +496,8 @@ body {
   margin-right: 10px;
 }
 
-.footer-social-list-item:hover,
-.footer-social-list-item:focus {
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -507,6 +507,7 @@ body {
   align-items: center;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
 }
 
 .footer-social-icon {
